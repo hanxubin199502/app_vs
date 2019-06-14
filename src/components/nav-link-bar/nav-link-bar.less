@@ -1,0 +1,33 @@
+@import '../../style/common.less';
+.tabbar{
+  .nav-bar{
+    width: 100%;
+    background: #fff;
+    height: 60px;
+    box-shadow: 0 -1px 2px #efefef;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom:0;
+    left:0;
+    z-index: 3000;
+    .nav-item{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .nav-inner{
+        color:@fontColor;
+        .nav-icon{
+          margin-bottom: 5px;
+          font-size: 18px;
+        }
+      }
+      .active{
+        .nav-inner{
+          color: #ff952f
+        }
+      }
+    }
+  }
+}

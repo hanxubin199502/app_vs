@@ -1,0 +1,86 @@
+@import "../../../../style/common";
+.operation-order-detail{
+  .operation-order-detail-header{
+    .fixedHeader;
+  }
+  .operation-order-detail-body{
+    margin-top: 45px;
+    margin-bottom: 20px;
+    .address-box{
+      background: #fff;
+      padding:15px 0 10px 0;
+      color: @fontColor;
+      font-size: @fontSize;
+      .consignee{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+      }
+      .address{
+        line-height: 24px;
+      }
+    }
+    .goods-box{
+      margin-top: 10px;
+      .goods-item{
+        color: @fontColor;
+        font-size: @fontSize;
+        background: #fff;
+        padding:10px 0 15px 0;
+
+        .top{
+          display: flex;
+          justify-content: space-between;
+          .price{
+            color: @brandColor;
+          }
+        }
+        .bottom{
+          display: flex;
+          justify-content:space-between;
+          margin-top: 10px;
+        }
+        .unit{
+          margin-top: 5px;
+          color: @fontGray;
+        }
+
+      }
+    }
+    .totalPrice-wrapper{
+      background: #fff;
+      .totalPrice{
+        height: 36px;
+        line-height: 36px;
+        background: #fff;
+        display: flex;
+        border-top: 1px solid @borderColor;
+        justify-content: space-between;
+        font-size: @fontSize;
+        color: @fontColor;
+        div{
+          &:last-child{
+            color: @brandColor;
+          }
+        }
+      }
+    }
+    .pay-method{
+      margin-top: 10px;
+    }
+    .upload{
+      padding:10px 0;
+      margin-top: 10px;
+      background: #ffffff;
+      .upload-title{
+        font-size: @fontSize;
+        color: @fontColor;
+        margin-bottom: 5px;
+      }
+    }
+    .submit-btn{
+      margin-top: 20px;
+    }
+
+  }
+}

@@ -1,0 +1,33 @@
+@import "../../../style/common";
+.my-customer{
+  .my-customer-header{
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 3000;
+  }
+  .my-customer-body{
+    margin-top: 45px;
+    .am-list-item .am-list-line .am-list-content{
+      overflow: unset!important;
+    }
+
+    .customer-wrapper{
+      width: 100%;
+      background: #ffffff;
+      padding-bottom: 60px;
+      font-size: @fontSize;
+      color: @fontColor;
+      .name{
+        span{
+          &:nth-child(2){
+            font-size: 14px;
+            color: @brandColor;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}

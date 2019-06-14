@@ -1,0 +1,103 @@
+@fontColor: #4a4a4a;
+@fontGray: #a8a8a8;
+@fontSize:16px;
+@fontSize2:14px;
+@brandColor:#f68b0e;
+@borderColor: #f3f3f3;
+.checked{
+  position: relative;
+  &:before{
+    content: "";
+    display: block;
+    border-radius: 2px;
+    width: 6px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 8px;
+    left:1px;
+    transform: rotate(45deg);
+  }
+  &:after{
+    content: "";
+    display: block;
+    border-radius: 2px;
+    width: 9px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top:7px;
+    right:2px;
+    transform: rotate(140deg);
+  }
+}
+.fixedHeader{
+  width: 100%;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 3000;
+}
+.blank{
+  width: 95%;
+  margin:0 auto;
+}
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?n45gpu');
+  src:  url('../fonts/icomoon.eot?n45gpu#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon.ttf?n45gpu') format('truetype'),
+  url('../fonts/icomoon.woff?n45gpu') format('woff'),
+  url('../fonts/icomoon.svg?n45gpu#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-orderForm:before {
+  content: "\e923";
+}
+.icon-visitPlan:before {
+  content: "\e926";
+}
+.icon-material:before {
+  content: "\e92e";
+}
+.icon-purchase:before {
+  content: "\e93a";
+}
+.icon-payCheck:before {
+  content: "\e940";
+}
+.icon-customer:before {
+  content: "\e944";
+}
+.icon-user:before {
+  content: "\e971";
+}
+.icon-team:before {
+  content: "\e972";
+}
+.icon-gift:before {
+  content: "\e99f";
+}
+.icon-briefcase:before {
+  content: "\e9ae";
+}
+.icon-stockCheck:before {
+  content: "\e9b8";
+}
